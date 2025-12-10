@@ -30,7 +30,7 @@ namespace ConsultaCEP
 
                     return;
                 }
-
+                textBox1.Enabled = false;
                 button1.Enabled = false;
 
                 var response = await _apiService.BuscaCepAsync(cep);
